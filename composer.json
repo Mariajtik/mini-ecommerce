@@ -1,0 +1,19 @@
+{
+  "name": "mariajtik/mini-ecommerce",
+  "description": "Mini E-commerce built with Laravel + Livewire for a technical challenge",
+  "require": {
+    "php": "^8.1",
+    "laravel/framework": "^11.0",
+    "livewire/livewire": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}
